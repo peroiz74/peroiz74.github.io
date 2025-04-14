@@ -49,6 +49,31 @@
 			x= 0;
 			y= 0;
 			
+			function w(a){	
+				$("<div></div>").attr({
+					"id": a[0],
+					"style": "background-image: url('https://drive.google.com/thumbnail?id=" + a[2] + " '); background-repeat: repeat; background-attachment: ; background-size: 10%;"
+				}).appendTo("#contenido");
+	
+				$("<figure></figure>").appendTo("div:last");
+				
+				$("<img></img>").attr({
+					"id": a[1],
+					"src": "https://drive.google.com/thumbnail?id=" + a[3]
+				}).click(function(){
+					window.location.href= "https://1024terabox.com/s/" + a[4];
+				}).appendTo("figure:last");
+				
+				$("<figcaption></figcaption>").css({
+					"background-color": "black",
+					"fontSize": "40px",
+					"font-weight": "bolder"
+				}).html(a[5]).appendTo("figure:last");
+								
+				$("<br />").appendTo("#contenido");
+				
+			};
+			
 			function z(a){	
 				$("<div></div>").attr({
 					"id": a[0],
@@ -93,7 +118,7 @@
 			
 			$(document).ready(function() {
 			 $("#ancla").click(function() {
-			 	buscar= "#" + $("#texto").val().replace(/ /g, "").toLowerCase();
+			 	buscar= "#" + $("#texto").val().replace(/ /g, "").replace(/á/g, "a").replace(/é/g, "e").replace(/í/g, "i").replace(/ó/g, "o").replace(/ú/g, "u").toLowerCase();
 			 	$('html, body').animate({
 			 		scrollTop: $(buscar).offset().top
 			 	}, 5000);
@@ -118,14 +143,16 @@
 		<br />
 		<br />
 		
+		
 		<div style= "bottom: 5px; position: fixed;">
 			<input type= "text" id= "texto" name= "texto" style= "font-size: 50px;" />
 			<a id= "ancla" style= "font-size: 50px;">
 				BUSCAR
 			</a>
 		</div>
-				
-			<script type="text/javascript"> 	atOptions = { 		'key' : 'a59bbfa69a1188094a1dd6add3f9a40d', 		'format' : 'iframe', 		'height' : 100, 		'width' : 96%, 		'params' : {} 	}; </script> <script type="text/javascript" src="//www.highperformanceformat.com/a59bbfa69a1188094a1dd6add3f9a40d/invoke.js"></script>	
+		
+		
+		<script type="text/javascript"> 	atOptions = { 		'key' : 'a59bbfa69a1188094a1dd6add3f9a40d', 		'format' : 'iframe', 		'height' : 60, 		'width' : 468, 		'params' : {} 	}; </script> <script type="text/javascript" src="//www.highperformanceformat.com/a59bbfa69a1188094a1dd6add3f9a40d/invoke.js"></script>
 				
 				
 		<script>
@@ -133,29 +160,21 @@
 		z(["numero", "#", "", "", "", "<h1>#</h1>"]);
 		ads(["https://www.effectiveratecpm.com/fbzuzfga?key=c5977cee658da1dcdd1d9debf86fba45"]);
 		
-		z(["71", "", "https://drive.google.com/thumbnail?id=1Gfnm34ODjP2ApjFJDshzdie-nP-V_7c5", "https://pics.filmaffinity.com/71-701004893-mmed.jpg", "https://teraboxapp.com/s/1kGpog_70qAYMpFc7SwnzLw?71", "71<br />23924MGBR2014P1<br />Lat[]MP4"]);
-			x+=1;
+		w(["71", "", "1Gfnm34ODjP2ApjFJDshzdie-nP-V_7c5", "1RBhki3HKGI71QJ93aciAP1UYdaUhFT4z", "1kGpog_70qAYMpFc7SwnzLw?71", "71<br />Latino []<br />MP4.239242014P1"]); x+=1;
 			
-			z(["100wolf", "100lobo", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAkJjimxSikr6r2fj_dVniFXm6IGvXdZwV8A&usqp=CAU", "https://pics.filmaffinity.com/100_wolf-868034774-mmed.jpg", "https://teraboxapp.com/s/1g3E4U_H3MD-xVDcnkKBGog", "100% WOLF<br />35439MAUS2020P1<br />Lat[]MP4"]);
-			x+=1;
+			w(["100wolf", "100lobo", "1WvJ2Ndamn0NxOTt-Qc6ts3sQMjno0dxC", "1X03LwoxOSG1eu-QH1VJBgAyZICVp5cw3", "1g3E4U_H3MD-xVDcnkKBGog", "100% WOLF<br />Latino []<br />MP4 354392020P1"]);x+=1;
 			
-			z(["10000ac", "10000bc", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC1gpfnZeUMfCDBTGdntpniQAYJjhg2Y-StwzSToXxD_rmO7MCi5lcPVM&s=10", "https://pics.filmaffinity.com/10_000_b_c-919016853-mmed.jpg", "https://teraboxapp.com/s/12BLE-RmNlsW-oz8f2OGr7w", "10000 B. C.<br />41279MEUA2008P1<br />Lat[]MP4"]);
-			x+=1;
+			w(["10000ac", "10000bc", "1XC8kUvcxDq2DAKnSVqUcKYIN2kXhudOA", "1XEO_SERW1j34yK_cGBYNTbMnZQQd22x1", "12BLE-RmNlsW-oz8f2OGr7w", "10000 B. C.<br />Latino []<br />MP4.412792008P1"]);x+=1;
 			
-			z(["10x10", "unaverdadinquietante", "", "https://pics.filmaffinity.com/10x10_outfall-521576833-mmed.jpg", "https://teraboxapp.com/s/1e4csR_FUe1QUpFK0OHn7lA", "10X10<br />139GGBR2018P1<br />Lat[]MP4"]);
-			x+=1;
+			w(["10x10", "unaverdadinquietante", "1XvKxmSK96pCsVUmCnMw8ajTlCJEuJYOc", "1XwpAVmJ0J3IZiP0V79tNnpluYM8EWTFv", "1e4csR_FUe1QUpFK0OHn7lA", "10X10<br />Latino Ingles [Español]<br />MKV.1392018P1"]);x+=1;
 			
-			z(["12rounds", "12desafios", "", "https://pics.filmaffinity.com/12_rounds_reloaded-175297229-msmall.jpg", "https://teraboxapp.com/s/15q7LzWGZSMmxW8OUaAFSmQ", "12 ROUNDS 2 RELOADED<br />19594MEUA2013P1<br />Lat[]MP4"]);
-			x+=1;
+			w(["12rounds", "12desafios", "1Y5COhDsU2ej3lgUFGeZWUcOQfgdw-hT3", "1YKlQIuqSmHnFsvyXGP_crgLI1GfipV2a", "15q7LzWGZSMmxW8OUaAFSmQ", "12 ROUNDS 2 RELOADED<br />Latino<br />MP4.195942013P1"]);x+=1;
 			
-			z(["12strong", "tropadeheroes", "", "https://pics.filmaffinity.com/12_strong-380529658-mmed.jpg", "https://teraboxapp.com/s/10WLYf4-wngTlcNmJB7VlDQ", "12 STRONG<br />44744MEUA2018P1<br />Lat[]MP4"]);
-			x+=1;
+			w(["12strong", "tropadeheroes", "1YTUB2U29FmTmcGprqlltHiLy-j13IrgD", "1YhRR8YKVedJ-uI4kDu2elMVqsyOnm5bq", "10WLYf4-wngTlcNmJB7VlDQ", "12 STRONG<br />Latino<br />MP4.447442018P1"]);x+=1;
 			
-			z(["13hours", "13horas", "", "https://pics.filmaffinity.com/13_hours_the_secret_soldiers_of_benghazi-604218830-msmall.jpg", "https://teraboxapp.com/s/1JexspDCa-QDX9aW7I0ZzXg", "13 HOURS<br />THE SECRET SOLDIERS OF BENGHAZI<br />60344MEUA2016P1<br />Lat[]MP4"]);
-			x+=1;
+			w(["13hours", "13horas", "1ZB3YDH75BVTWjL1bPp5ilTPGrFhhk4hY", "1ZDJlr_JmmzJn8MCRPejP44UJKXpYmdgH", "1JexspDCa-QDX9aW7I0ZzXg", "13 HOURS<br />THE SECRET SOLDIERS OF BENGHAZI<br />Latino<br/>MP4603442016P1"]);x+=1;
 			
-			z(["16blocks", "muertesubita", "", "https://pics.filmaffinity.com/16_blocks_sixteen_blocks-304194311-mmed.jpg", "https://teraboxapp.com/s/1aHgEpkM2kyBRNYHb1Nmejg", "16 BLOCKS<br />357GEUA2006P1<br />Lat[]MP4"]);
-			x+=1;
+			w(["16blocks", "muertesubita", "1cXmRr7r-OH49cIfX8rv8JHAsdjhCL5ky", "1cWSr_bgwhrhSOSDtlP_IlXwg-WCzYNcv", "1aHgEpkM2kyBRNYHb1Nmejg", "16 BLOCKS<br />Latino<br />MP4.3572006P1"]);x+=1;
 			
 			z(["1898losultimosdefilipinas", "losultimosdefilipinas", "", "https://pics.filmaffinity.com/1898_los_ultimos_de_filipinas-735303912-mmed.jpg", "https://teraboxapp.com/s/14y9zlgRjtcQyIaXzXOHrfQ", "1898 LOS ULTIMOS DE FILIPINAS<br />48811MESP2016P1<br />Lat[]MP4"]);
 			x+=1;
@@ -165,6 +184,8 @@
 			
 			z(["3metrossobreelcielo", "", "", "https://pics.filmaffinity.com/3_metros_sobre_el_cielo-961927049-mmed.jpg", "https://terabox.com/s/1sa2uaoP8BBVf45XYfkokIA", "3 METROS SOBRE EL CIELO<br />131GESP2010<br />Lat[]MP4"]);
 			x+=1;
+			
+			w(["30nochesconmiex", "treintanochesconmiex", "1aadlrLME4WFENG6rgM63VTEvWrMoEZ4H", "1aaX0eNJxvl21ZuW1U1rIZsxDWzdPxXrH", "1HQnCK6D-C5NmPMhik6ULPQ", "30 NOCHES CON MI EX<br />Latino<br />MKV.3912022P1G"]);x+=1;
 			
 			z(["300", "", "", "https://pics.filmaffinity.com/300-177205452-mmed.jpg", "https://teraboxapp.com/s/1XIh0VPCKibiuW-gAdb9kIQ", "300<br />269GEUA2006P11080p<br />Lat[Spa]MKV"]);
 			x+=1;
@@ -187,8 +208,7 @@
 			z(["50firstdates", "comosifueralaprimeravez", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRN9INWWSrmfxjZReS1u4ZSpufGMsjD70IONSV6lSI0CM2Zk9cRhvk1F3F&s=10", "https://pics.filmaffinity.com/50_first_dates-691881778-mmed.jpg", "https://teraboxapp.com/s/1-NcEwYdze0hqNF-5BL6U6w", "50 FIRST DATES<br />147GEUA2004P2<br />Lat[]MP4"]);
 			x+=1;
 			
-			z(["500daysofsummer", "500diasconella", "", "https://pics.filmaffinity.com/500_days_of_summer-695902679-mmed.jpg", "https://terabox.com/s/1PF4TVMrtIFjroWNhyC3P8g", "500 DAYS OF SUMMER<br />145USA2009<br />Lat[]MP4"]);
-			x+=1;
+			w(["500daysofsummer", "500diasconella", "1aNUATithO-9itzexlV7ah8QZG7kPO69E", "1aMYXxEz1KrVSHYscL58ZNMvWGMl10lss", "1r3GLjEIaxW8udATk5XFLmA", "500 DAYS OF SUMMER<br />Latino Ingles [Español]<br />MKV.4692009P1G"]);x+=1;
 			
 			z(["9", "numero9", "", "https://pics.filmaffinity.com/9-530356351-mmed.jpg", "https://1024terabox.com/s/1xnKcrNhE-sKYSXnURcaghQ", "9<br />152USA2009P2<br />Lat[]MP4"]);
 			x+=1;
@@ -208,6 +228,8 @@
 			
 			z(["anightmareonelmstreet", "pesadilla", "", "https://pics.filmaffinity.com/freddy_vs_jason-860246573-mmed.jpg", "https://teraboxapp.com/s/1mrEzMSBLhy7jvSVwCbPFSw", "A NIGHTMARE ON ELM STREET<br />FREDDY VS JASON<br />201GEUA2003P1<br />Lat[SpaEng]MKV"]);
 			x+=1;
+			
+			w(["arealpain", "undolorreal", "1crtalhZkeb-picvVkruYIFI3Cs44jdXS", "1chQRWw6tGof-eyJuGnFHWmX68OmNMr4n", "186nV5NPquTGJiYiCUdQuEg", "A REAL PAIN<br />Español Ingles [Español]<br />MKV.3992024P1G"]);x+=1;
 						
 			z(["atodamaquina", "", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlcXWYTVL8g--eL04XQJRK6Zt5l6ZHfB7s-k0sZLkCyZByqcAB0T-uBA&s=10", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAVKu0gOyC-os5WuJSFjbNemiaRUctZDiPP9Yhm4x4tA&s", "https://terabox.com/s/18X16CDItdEw9On1T92NIAA", "A TODA MAQUINA<br />33997MMEX1951<br />Lat[]MP4"]);
 			x+=1;
@@ -293,8 +315,6 @@
 			z(["", "", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCMU1ZTKJznPIA8kuAyHWM_WyrotKEQ0JEMQ&usqp=CAU", "https://upload.wikimedia.org/wikipedia/en/7/7e/Adventure_Time_Distant_Lands_Poster.jpg", "https://1024terabox.com/s/1OrDRx_WrQylZkH5C4NLE_w?adventure_time_distant_lands_C1-4", "ADVENTURE TIME<br />DISTANT LANDS<br />Capitulos 1-4<br />4CUSA2020S1<br />Lat[]MP4"]);
 			y+=4;
 			
-			z(["", "after", "", "", "", "AFTER"]);
-			
 			z(["", "", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/After_%28film%29_logo.png/340px-After_%28film%29_logo.png", "https://pics.filmaffinity.com/after-117306772-mmed.jpg", "https://teraboxapp.com/s/1-KDE1cXADOAjEmscReMSvA", "AFTER<br />95122MEUAA2019P1<br />Lat[]MP4"]);
 			x+=1;
 			
@@ -349,8 +369,7 @@
 			z(["", "", "https://drive.google.com/thumbnail?id=1UNGZy92Gj0DBHA51_9PIakh4ahuVlH5D", "https://image.tmdb.org/t/p/original/2X4DHqeRDG11LytPtvMKodm3lDO.jpg", "https://teraboxapp.com/s/1DaUqItGX3M0RqoGZC0uy1Q", "ALIEN RESURECTION<br />247EUA1997P1<br />Lat[SpaEng]MKV"]);
 			x+=1;
 			
-			z(["", "", "https://drive.google.com/thumbnail?id=1UNGZy92Gj0DBHA51_9PIakh4ahuVlH5D", "https://image.tmdb.org/t/p/original/qsYQflQhOuhDpQ0W2aOcwqgDAeI.jpg", "https://teraboxapp.com/s/146LfkutAuXDxtZ4hBAUmEg", "PROMETHEUS<br />263EUA2012P1<br />LatEng[SpaEng]MKV"]);
-			x+=1;
+			z(["", "", "https://drive.google.com/thumbnail?id=1UNGZy92Gj0DBHA51_9PIakh4ahuVlH5D", "https://image.tmdb.org/t/p/original/qsYQflQhOuhDpQ0W2aOcwqgDAeI.jpg", "https://teraboxapp.com/s/146LfkutAuXDxtZ4hBAUmEg", "PROMETHEUS<br />audio: Latino Ingles<br />Subt: Español Ingles<br />2632012P1MKV"]);x+=1;
 			
 			z(["", "", "https://drive.google.com/thumbnail?id=1UNGZy92Gj0DBHA51_9PIakh4ahuVlH5D", "https://image.tmdb.org/t/p/original/ndA3CzXSSisHXspfMbHzG3yQMql.jpg", "https://teraboxapp.com/s/1SNBAVEBl56LgJ8elR04uug", "ALIEN COVENANT<br />259EUA2017P1<br />Lat[SpaEng]MKV"]);
 			x+=1;
@@ -783,6 +802,8 @@
 			z(["constantine", "", "", "https://pics.filmaffinity.com/constantine-696456521-mmed.jpg", "https://terabox.com/s/1W23aSv8o31mPwY7UGTDung", "CONSTANTINE<br />873GUSA2005P2<br />Lat[]MP4"]);
 			x+=1;
 			
+			z(["corina", "", "", "https://drive.google.com/thumbnail?id=1WY9x6m3chv-r7inKl2lC1O2xQOaLfW-6", "https://1024terabox.com/s/1Gv1Wq4GJyxuj84C09U3PDg", "CORINA<br />Audio: Latino<br />Subt: Español Ingles<br />1080p.MKV<br />3322024P1"]);x+=1;
+			
 			z(["cowboybebop", "", "", "https://pics.filmaffinity.com/cowboy_bebop-548837932-mmed.jpg", "https://1024terabox.com/s/1kqECaFiOnoGuZo6w8Amikg?cowboybebop_C1-26", "カウボーイビバップ<br />COWBOY BEBOP<br />Capitulos 1-26<br />26CJAP1998S1<br />Lat[]MP4"]);
 			y+=26;
 			
@@ -792,14 +813,16 @@
 			z(["contrareloj", "cradle2thegrave", "", "https://pics.filmaffinity.com/cradle_2_the_grave-590079134-mmed.jpg", "https://teraboxapp.com/s/1GykoSfJhu94eq8YNGkxRag", "CRADLE 2 THE GRAVE<br />50903MUSA2003P2<br />Lat[]MP4"]);
 			x+=1;
 			
-			z(["locoyestupidoamor", "crazystupidlove", "", "https://pics.filmaffinity.com/crazy_stupid_love-813652973-mmed.jpg", "https://freeterabox.com/s/11y3FeCvWYVHRRMxbluU-hg", "CRAZY STUPID LOVE<br />103GUSA2011P2<br />Lat[]MP4"]);
+			z(["crazystupidlove", "locoyestupidoamor", "", "https://pics.filmaffinity.com/crazy_stupid_love-813652973-mmed.jpg", "https://freeterabox.com/s/11y3FeCvWYVHRRMxbluU-hg", "CRAZY STUPID LOVE<br />103GUSA2011P2<br />Lat[]MP4"]);
 			x+=1;
 			
-			z(["colmilloblanco", "crocblanc", "", "https://pics.filmaffinity.com/croc_blanc_white_fang-199011424-mmed.jpg", "https://teraboxapp.com/s/1XIj3yNaEMFTqW-5VNMo3mQ", "CROC-BLANC<br />140GFRA2017P1<br />Lat[]MP4"]);
+			z(["crocblanc", "colmilloblanco", "", "https://pics.filmaffinity.com/croc_blanc_white_fang-199011424-mmed.jpg", "https://teraboxapp.com/s/1XIj3yNaEMFTqW-5VNMo3mQ", "CROC-BLANC<br />140GFRA2017P1<br />Lat[]MP4"]);
 			x+=1;
 			
-			z(["elcubo", "cube", "", "https://pics.filmaffinity.com/cube-147414643-mmed.jpg", "https://terabox.com/s/1JdwcmeLsW180kDtbaIBHaw", "CUBE<br />303GUSA1997P2<br />Lat[]MP4"]);
+			z(["cube", "elcubo", "", "https://pics.filmaffinity.com/cube-147414643-mmed.jpg", "https://terabox.com/s/1JdwcmeLsW180kDtbaIBHaw", "CUBE<br />303GUSA1997P2<br />Lat[]MP4"]);
 			x+=1;
+			
+			z(["cyborgx", "", "", "https://drive.google.com/thumbnail?id=1WPbYVg19D9PaFnFjKtRvYzHmBAbzlh-V", "https://1024terabox.com/s/1CYMAJ9WWWpmu8TU5Z0HJ1w", "CYBORG X<br />Audio: Latino<br />1080p.MP4<br />1602016P1"]);x+=1;
 			
 			ads([""]);
 			z(["d", "", "", "", "", "<h1>&Dopf;</h1>"]);
@@ -1237,6 +1260,10 @@
 			
 			z(["forrestgump", "", "", "https://pics.filmaffinity.com/forrest_gump-212765827-mmed.jpg", "https://teraboxapp.com/s/13tGvvMg5VgQYsitBzSylIA?forrest_gump", "FORREST GUMP<br />82995USA1994P1<br />Lat[]MP4"]);
 			x+=1;
+			
+			z(["foundation", "fundacion", "https://drive.google.com/thumbnail?id=1Val4GklFfwr3wn03jM3HwydPdMAVYH5C", "https://drive.google.com/thumbnail?id=1VWYrntSitUcFjepaJCWd52pJNzQuuE5L", "https://1024terabox.com/s/15PzIZEAIbXBJhttVQLIRww", "FOUNDATION<br />Temporada 1 Capitulos 1-10<br />Audio: Latino Ingles<br />subt: Español<br />2023P1 MKV"]); y+=10;
+			
+			z(["", "", "https://drive.google.com/thumbnail?id=1Val4GklFfwr3wn03jM3HwydPdMAVYH5C", "https://drive.google.com/thumbnail?id=1VWkEMNpxqL5hRSo4ewv8pIDISgNYddyb", "https://1024terabox.com/s/19oQeDW1alaClxBQNIwIIzg", "FOUNDATION<br />Temporada 2 Capitulos 11-20<br />Audio: Ingles<br />subt: Español<br />2023P1 MKV"]); y+=10;
 			
 			z(["heroeporencargo", "freelance", "", "https://pics.filmaffinity.com/freelance-336523278-mmed.jpg", "https://terabox.com/s/1x_P-k-aerd4-6xJyrUaEIg?freelance", "FREELANCE<br />162USA2023P2<br />Lat[]MP4"]);
 			x+=1;
@@ -1743,6 +1770,9 @@
 			z(["kin", "", "", "https://pics.filmaffinity.com/kin-281964148-mmed.jpg", "https://teraboxapp.com/s/1XJEHvh7cCsGP6vZ6Zx7Dkw", "KIN<br />863852018P1<br />Lat[]MP4"]);
 			x+=1;
 			
+			w(["kindsofkindsness", "tiposdegentileza", "1eAhxgX1UOb0QaUh7LEDzRaFSvW3FuCMf", "1e5rrwwZVaJrXgOf8SAvpbqPyWaiN2deG", "1vqJcLEcr3_2GVWDxaijxyA", "KINDS OF KINDNESS<br />Latino Ingles<br />MKV.3172024P1G"]);
+			x+=1;
+			
 			z(["kissofthedragon", "elbesodeldragon", "", "https://pics.filmaffinity.com/kiss_of_the_dragon-610450624-mmed.jpg", "https://teraboxapp.com/s/1SprFT6aO9jITeS6Oq8PnCA", "KISS OF THE DRAGON<br />49398FRA2001P2<br />Lat[]MP4"]);
 			x+=1;
 			
@@ -1934,6 +1964,8 @@
 			z(["miaetlelionblanc", "mimascotaesunleon", "", "https://pics.filmaffinity.com/mia_et_le_lion_blanc-253586182-mmed.jpg", "https://teraboxapp.com/s/1jmYp8TmcEHutXQw3pXp73A", "MIA ET LE LION BLANC<br />1352018P1<br />Lat[]MP4"]);
 			x+=1;
 			
+			w(["mickey17", "mickey", "1XXwzHI9XJzD0VHsFSZmtFUgRwNuycNjx", "1Xpz3Y9tkYcOrrhfcgharUgTc_Zsoji2x", "1h-UNeXS7uddMJLCCYVDBzw", "MICKEY 17<br />Latino []<br />720p.MP4 1452025P1"]);x+=1;
+			
 			z(["midway", "", "", "https://pics.filmaffinity.com/midway-463739122-mmed.jpg", "https://teraboxapp.com/s/1wR9IfRuMFVwmrX0w_kLtCw", "MIDWAY<br />455292019P1<br />Lat[]MP4"]);
 			x+=1;
 			
@@ -2106,6 +2138,8 @@
 			
 			z(["", "", "", "https://image.tmdb.org/t/p/original/yqnNLn24shYnZ6kqGpbwuB3NJ0D.jpg", "https://teraboxapp.com/s/13M-Mw4jCMoXI7W-oGu_36A", "PET SEMATARY 2<br />BLOODLINES<br />3062023P1<br />Lat[]MP4"]);
 			x+=1;
+			
+			z(["peterpan", "piterpan", "https://drive.google.com/thumbnail?id=1UmY6xFDWBDRncT0xTELwo1neTZXA452t", "https://drive.google.com/thumbnail?id=1UnM5qGtmEyNUZaF7SVRQCt1kxhUmMFG6", "https://1024terabox.com/s/1Xn_RKqa2zWGXbnNCLIa0IA", "PETER PAN'S NEVERLAND NIGHTMARE<br />Audio: Latino<br />1632025P2MP4"]);x+=1;
 			
 			z(["piratesofthecaribbean", "piratasdelcaribe", "https://drive.google.com/thumbnail?id=1RqFeDoJr8bquouKM5-xgF-DopHWm9b4k", "https://drive.google.com/thumbnail?id=1RbTz3F31tRYd8KEIiZTF7Zp7Xst8_5-q", "https://1024terabox.com/s/1PgMlepzY9JQMJbkwhdEUSg", "PIRATES OF THE CARIBBEAN 1<br />THE CURSE OF THE BLACK PEARL<br />2172003P2<br />Lat [] MP4"]);
 			x+=1;
@@ -2315,6 +2349,14 @@
 			z(["robotech", "", "", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxjR2UW9QgxQcI85P_-iow5WhRiDoW-fFLt39gbtxCr86PKlvBjPGik2z&s=10", "https://1024terabox.com/s/1W7rRIYxTYwLNagspl8E5PQ?robotech_T1C1-36", "ROBOTECH<br />THE MACROSS SAGA<br />T1C1-36<br />JAPUSA1985S1<br />Lat[]MP4"]);
 			y+=36;
 			
+			w(["rockosmodernlife", "lavidamodernaderocko", "1c5OJ0jeOzTy3ZfVEkuDX8qsfwRkUxZD2", "1c3Qu41OJx50zSTi7763Kq-K7Udn0W21s", "1gzwGBXru-gkIerT4B3hhMQ", "ROCKO'S MODERN LIFE<br />Latino<br />Temporada 1 Capitulos 1-13<br />MP4.1993P1G"]);y+=13;
+			
+			w(["", "", "1c5OJ0jeOzTy3ZfVEkuDX8qsfwRkUxZD2", "1cFZNZ76H2LkEvNLu01Ap0xxeqNxpXeri", "1gZkPVvqQCxuxBL1fvZag3Q", "ROCKO'S MODERN LIFE<br />Latino<br />Temporada 2 Capitulos 14-26<br />MP4.1994P1G"]);y+=13;
+			
+			w(["", "", "1c5OJ0jeOzTy3ZfVEkuDX8qsfwRkUxZD2", "1cF98p0KpSAjPbNsukJ-NDha9ldGvI2PP", "1W89Pon-9VGb2_2KC1LwdKg", "ROCKO'S MODERN LIFE<br />Latino<br />Temporada 3 Capitulos 27-39<br />MP4.1995P1G"]);y+=13;
+			
+			w(["", "", "1c5OJ0jeOzTy3ZfVEkuDX8qsfwRkUxZD2", "1cC_iyR5q9G6QLC6NgnHGbuxJHkK8Avma", "14pJ4-NCCb_l9KEBMhjtkVQ", "ROCKO'S MODERN LIFE<br />Latino<br />Temporada 4 Capitulos 40-52<br />MP4.1996P1G"]);y+=13;
+			
 			z(["rocky", "", "", "https://image.tmdb.org/t/p/original/zxctX2pCucniDkS83TTCqRnKS9e.jpg", "https://teraboxapp.com/s/1y22aO8o3SQUeAEevnANyoA", "ROCKY<br />364USA1976P1<br />Lat[]MP4"]);
 			x+=1;
 			
@@ -2418,11 +2460,19 @@
 			z(["seninandir", "", "", "https://pics.filmaffinity.com/sen_inandir-629955886-mmed.jpg", "https://teraboxapp.com/s/1-uWzh-vRf9DdXblaYF74JQ", "SEN INANDIR<br />4532023P1<br />Lat[]MP4"]);
 			x+=1;
 			
+			z(["servant", "", "https://drive.google.com/thumbnail?id=1W63oNvefZTmQxLFunEnN_S6nSrrLSXZ_", "https://drive.google.com/thumbnail?id=1VmIQAsUj7AkXUdWevAp0Em59oBUGEQJO", "https://1024terabox.com/s/1alZsRknWawe014LbFAUnxA", "SERVANT<br />Temporada 1 Caputulos 1-10<br />Audio: Ingles<br />Subt: Español<br />2020P1 MKV"]);y+=10;
+			
+			z(["", "", "https://drive.google.com/thumbnail?id=1W63oNvefZTmQxLFunEnN_S6nSrrLSXZ_", "https://drive.google.com/thumbnail?id=1Vqfs7FQE6IEVmyJ38BzeCgOfNL3KdWi0", "https://1024terabox.com/s/1mSxvEklzSwCR8DFjpgr-cw", "SERVANT<br />Temporada 2 Caputulos 11-20<br />Audio: Ingles<br />Subt: Español<br />2021P1 MKV"]);y+=10;
+			
+			z(["", "", "https://drive.google.com/thumbnail?id=1W63oNvefZTmQxLFunEnN_S6nSrrLSXZ_", "https://drive.google.com/thumbnail?id=1W2CBMjX32axRWBlN_NJ_JDPFW8BNJh0k", "https://1024terabox.com/s/1agXzUCIRFChPitBmjOG2Bg", "SERVANT<br />Temporada 3 Caputulos 21-30<br />Audio: Ingles<br />Subt: Español<br />2022P1 MKV"]);y+=10;
+			
+			z(["", "", "https://drive.google.com/thumbnail?id=1W63oNvefZTmQxLFunEnN_S6nSrrLSXZ_", "https://drive.google.com/thumbnail?id=1W3RQyy6OqKwKyupstl_gtkAvO8Lkp7jf", "https://1024terabox.com/s/1amZm4wNC_-_eafRmCeDQmA", "SERVANT<br />Temporada 4 Caputulos 31-40<br />Audio: Ingles<br />Subt: Español<br />2023P1 MKV"]);y+=10;
+			
 			z(["shaft", "", "", "https://pics.filmaffinity.com/shaft-140126935-mmed.jpg", "https://teraboxapp.com/s/13TDb8NSr77TwS3RNU8Co2g", "SHAFT<br />104USA2019P1<br />Lat[]MP4"]);
 			x+=1;
 			
 			z(["thelegendofthetenrings", "laleyendadelosdiezanillos", "", "https://pics.filmaffinity.com/shang_chi_and_the_legend_of_the_ten_rings-111813706-mmed.jpg", "https://terabox.com/s/1rdX5JiIoEYUJ7UW1JbOznQ", "SHANG-CHI AND<br />THE LEGEND OF THE TEN RINGS<br />128USA2021<br />Lat[]MP4"]);
-			x+=1;
+			x+=1;			
 			
 			z(["shanghainoon", "shanghaikid", "", "https://pics.filmaffinity.com/shanghai_noon-612462818-mmed.jpg", "https://terabox.com/s/19H2-AXLdlyDxv4v7KUUP3A", "SHANGHAI NOON<br />554872000P2MP4<br />Lat[]MP4"]);
 			x+=1;
@@ -2484,7 +2534,17 @@
 			z(["speed", "", "", "https://pics.filmaffinity.com/speed-396503860-mmed.jpg", "https://teraboxapp.com/s/10SjPUFMEu3qjJGNvzNrkhg", "SPEED<br />523401994P1<br />Lat[]MP4"]);
 			x+=1;
 			
-			z(["spiderman", "elhombrearaña", "", "https://pics.filmaffinity.com/spider_man_spiderman-945131720-mmed.jpg", "https://terabox.com/s/1DR9_NNWCrio_NYGUS1KXPA", "SPIDER-MAN<br />298USA2003<br />Lat[]MP4"]);
+			w(["spiderman", "elhombrearaña", "1bKblj9kbjVLrjPrEt63tSTb7lh_G1KFe", "1bOWdIH7fPZTsxx7ds8-yikbM8BD0K-pp", "1Z5h-zr8dyxP7xyS8xYcxbA", "SPIDER-MAN<br />Temporada 1 Capitulos 1-13<br />Latino Ingles<br />1080p.MKV1994P1G"]);y+=13;
+			
+			w(["", "", "1bKblj9kbjVLrjPrEt63tSTb7lh_G1KFe", "1bNmqbqt8EC8-wBnIQRYXUiU_EbOPgU8x", "1ud61TWcM-Ebiq-XEr9lcEQ", "SPIDER-MAN<br />Temporada 2 Capitulos 14-27<br />Latino Ingles<br />1080p.MKV1995P1G"]);y+=14;
+			
+			w(["", "", "1bKblj9kbjVLrjPrEt63tSTb7lh_G1KFe", "1bNOlk7e5gQwrOOSN3uwPZA20xFyFXUcw", "1_SGTlNeDl5RZUFsLa7ZkJA", "SPIDER-MAN<br />Temporada 3 Capitulos 28-41<br />Latino Ingles<br />1080p.MKV1996P1G"]);y+=14;
+			
+			w(["", "", "1bKblj9kbjVLrjPrEt63tSTb7lh_G1KFe", "1bLrW8BOsCj52n0Y-KzHbsPvEjvFt0Upc", "1G0o-WRRWAW_yjStyIYuaeA", "SPIDER-MAN<br />Temporada 4 Capitulos 29-52<br />Latino Ingles<br />1080p.MKV1997P1G"]);y+=11;
+			
+			w(["", "", "1bKblj9kbjVLrjPrEt63tSTb7lh_G1KFe", "1bLU0sXowirUpLcRcZoxxK06aHzQV2xhP", "1ajj9QM1Xz8f3bHhLrNRzpA", "SPIDER-MAN<br />Temporada 5 Capitulos 53-65<br />Latino Ingles<br />1080p.MKV1997P1G"]);y+=13;
+			
+			z(["", "", "", "https://pics.filmaffinity.com/spider_man_spiderman-945131720-mmed.jpg", "https://terabox.com/s/1DR9_NNWCrio_NYGUS1KXPA", "SPIDER-MAN<br />298USA2003<br />Lat[]MP4"]);
 			x+=1;
 			
 			z(["", "", "", "https://pics.filmaffinity.com/spider_man_2-876729560-mmed.jpg", "https://terabox.com/s/1w8fZPEqVFbLTd7m-_EdR0w", "SPIDER-MAN 2<br />375USA2004<br />Lat[]MP4"]);
@@ -2520,10 +2580,10 @@
 			z(["", "", "", "https://image.tmdb.org/t/p/original/i8PSlYby1O5l2oPBhSDFAl5vNT6.jpg", "https://teraboxapp.com/s/1y7vd9RGd4LNOE2pYKeVOJA", "拳精<br />SPIRITUAL KUNG FU<br />270HKG1978P1<br />Lat[]MP4"]);
 			x+=1;
 			
-			z(["", "eljuegodelcalamar", "", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTICNWpTVeFQCBKXMUhIFr0XJYsOeEIsFDfHQ&usqp=CAU", "https://1024terabox.com/s/1cDL40uKdl4wLj4dKEu2u2g?squid_gameT1-C1-9", "오징어 게임<br />SQUID GAME<br />T1C1-9<br />KOR2021S1<br />Lat[]MP4"]);
+			z(["squidgame", "eljuegodelcalamar", "", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTICNWpTVeFQCBKXMUhIFr0XJYsOeEIsFDfHQ&usqp=CAU", "https://1024terabox.com/s/1cDL40uKdl4wLj4dKEu2u2g?squid_gameT1-C1-9", "오징어 게임<br />SQUID GAME<br />T1C1-9<br />KOR2021S1<br />Lat[]MP4"]);
 			y+=9;
 			
-			z(["", "", "", "https://gatonplayseries.com/wp-content/uploads/2020/07/mUfwU4rdJcnOWZGQhSi1wIG5rkN.jpg", "https://teraboxapp.com/s/1Ck6Y6K2W_3QXs_8SpNO0gQ", "STAND BY ME<br />245USA1986P1<br />Lat[]MP4"]);
+			z(["standbyme", "", "", "https://gatonplayseries.com/wp-content/uploads/2020/07/mUfwU4rdJcnOWZGQhSi1wIG5rkN.jpg", "https://teraboxapp.com/s/1Ck6Y6K2W_3QXs_8SpNO0gQ", "STAND BY ME<br />245USA1986P1<br />Lat[]MP4"]);
 			x+=1;
 			
 			z(["startrek", "viajealasestrellas", "", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAZB52CxlNHuUkm1mKDlJWt15PK7Ut5D5tqXtSF85pFnufbcEqhTeMOzA&s=10", "https://1024terabox.com/s/1ug9tqmYBrAwnH64Z0NkYsQ?star_trek_T1C1-16", "STAR TREK<br />THE ANIMATED SERIES<br />T1C1-16<br />USA1974S1<br />Lat[]MP4"]);
@@ -2534,6 +2594,28 @@
 			
 			z(["", "", "", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHVemZ84tKO5rtcy4QfrBouC1ISOq1iwtKX6gePjERcugKm3Rz_ebRxB_U&s=10", "https://1024terabox.com/s/1I4pvvfbm5-y0fR5QmHXKGw?star_trek_the_next_generation_T1C1-25", "STAR TREK<br />THE NEXT GENERATION<br />T1C1-25<br />USA1987S1<br />Lat[]MP4"]);
 			y+=25;
+			
+			w(["starwars", "laguerradelasgalaxias", "1flBA1kjxb9uN3GCD2aY8KgONTT9tv4NL", "1fVIGscqUpCTdRHB95d2ZbfIOP-IZO98q", "1_qrNts6X07Rsa-G_KzTJJA", "STAR WARS EPISODE IV<br />A NEW HOPE<br />Latino Ingles [Español]<br />1080p.MKV.2541977P1G"]);x+=1;
+			
+			w(["", "", "1flBA1kjxb9uN3GCD2aY8KgONTT9tv4NL", "1fQfQSNJCdkjUgGWX8WNGh5B-E2GX8-TE", "1SJLgrRMYr604ABsLLTrGjQ", "STAR WARS EPISODE V<br />THE EMPIRE STRIKES BACK<br />Latino Ingles [Español]<br />1080p.MKV.2601980P1G"]);x+=1;
+			
+			w(["", "", "1flBA1kjxb9uN3GCD2aY8KgONTT9tv4NL", "1eslpHOKZ2ohNAcyetKWMFiE8L5R968IC", "1Eot3C2Cgvj7feq5WmpnPvw", "STAR WARS EPISODE VI<br />RETURN OF THE JEDI<br />Latino Ingles [Español]<br />1080p.MKV.2791983P1G"]);x+=1;
+			
+			w(["", "", "1flBA1kjxb9uN3GCD2aY8KgONTT9tv4NL", "1fdh8_1hFN1rYbl_3pD_7E1pPtxkHLfvQ", "1jyZ6IMbplTnlLYapdaRRPw", "STAR WARS EPISODE I<br />THE PHANTOM MENACE<br />Latino Ingles [Español]<br />1080p.MKV.2871999P1G"]);x+=1;
+			
+			w(["", "", "1flBA1kjxb9uN3GCD2aY8KgONTT9tv4NL", "1faaBGvaqXzLFTA0p92WMAhZRWrQBTLND", "1Q2IEoDzTAePpy_oFuNmOlA", "STAR WARS EPISODE II<br />ATTACK OF THE CLONES<br />Latino Ingles [Español]<br />1080p.MKV.2992002P1G"]);x+=1;
+			
+			w(["", "", "1flBA1kjxb9uN3GCD2aY8KgONTT9tv4NL", "1fX8xc1bmUNwMvzQFq5J0MqMfhbkSQd4V", "1a_niguePBjWeHFq-0WAmkg", "STAR WARS EPISODE III<br />REVENGE OF THE SITH<br />Latino Ingles [Español]<br />1080p.MKV.2942005P1G"]);x+=1;
+			
+			w(["", "", "1flBA1kjxb9uN3GCD2aY8KgONTT9tv4NL", "1fOv-1j6qO-eyUypbDgr7qIYKkI8oFWy0", "12T3F1UbOW4lMTPDl1lEolw", "STAR WARS EPISODE VII<br />THE FORCE AWAKENS<br />Latino Ingles [Español]<br />1080p.MKV.2842015P1G"]);x+=1;
+			
+			w(["", "", "1flBA1kjxb9uN3GCD2aY8KgONTT9tv4NL", "1fHLye474z7EdoQ1OzI6lRLGCbKmYbdNp", "1AJZErOwububuD2Zi-w0DVA", "STAR WARS EPISODE VIII<br />THE LAST JEDI<br />Latino Ingles [Español]<br />1080p.MKV.3152017P1G"]);x+=1;
+			
+			w(["", "", "1flBA1kjxb9uN3GCD2aY8KgONTT9tv4NL", "1fR__mQSPFWOIB0tW6RFqQY00fjVBOmSn", "17_9Xa0XNl5h7VKazZj-Jhw", "STAR WARS EPISODE IX<br />THE RISE OF SKYWALKER<br />Latino Ingles [Español]<br />1080p.MKV.2992019P1G"]);x+=1;
+			
+			w(["", "", "1g469ArullqCYec_Y6QatpQObNAiH95Mb", "1fFrs-p6trzmxPz7b9UNa_Fl54M_F8CqM", "1uUjwyIYBhmSj4NSEZPn_Xw", "STAR WARS<br />ROGUE ONE<br />Latino Ingles [Español]<br />1080p.MKV.2812016P1G"]);x+=1;
+			
+			w(["", "", "1g469ArullqCYec_Y6QatpQObNAiH95Mb", "1f9ZcRcDmMGt7r1Al7gT9LQPzB2eGPu01", "", "STAR WARS<br />HAN SOLO"]);x+=1;
 			
 			z(["stepbystep", "pasoapaso", "https://drive.google.com/thumbnail?id=1Q3xvkciv0eLw6UoxAMdA9HxoEmbBlQsE", "https://drive.google.com/thumbnail?id=1PciFOG9CAltayi2duiuk5X8bFaVjqQzA", "https://1024terabox.com/s/13BSM4IdZp7oxeYEjfuWE6g", "STEP BY STEP<br />Temporada 1 Capitulos 1-22<br />USA1991S1<br />Lat[]MP4"]);
 			y+=22;
@@ -2550,10 +2632,14 @@
 			z(["sueñoenotroidioma", "", "", "https://pics.filmaffinity.com/sueno_en_otro_idioma-471308600-mmed.jpg", "https://teraboxapp.com/s/1A2dSZJvC0ux9dE8pl8K8Dw", "SUEÑO EN OTRO IDIOMA<br />902902017<br />Lat[]MP4"]);
 			x+=1;
 			
-			z(["", "", "", "https://pics.filmaffinity.com/the_super_mario_bros_movie-521125124-mmed.jpg", "https://teraboxapp.com/s/1h_aKhEoOYvLzWx0PkcvE1g", "THE SUPER MARIO BROS. MOVIE<br />2842023<br />Lat[]MP4"]);
+			z(["supermariobros", "mariobros", "", "https://pics.filmaffinity.com/the_super_mario_bros_movie-521125124-mmed.jpg", "https://teraboxapp.com/s/1h_aKhEoOYvLzWx0PkcvE1g", "THE SUPER MARIO BROS. MOVIE<br />2842023<br />Lat[]MP4"]);
 			x+=1;
 			
-			z(["", "", "", "https://image.tmdb.org/t/p/original/aI4kc1w6issn82IHUq2do9Q53N5.jpg", "https://teraboxapp.com/s/1OSFmM5SOzq8vJj3-Mznl8Q", "SWAMP THING<br />3971983<br />Lat[]MP4"]);
+			w(["surface", "superficie", "1enw6zBPDU6JIHWLHX6jWP0vclQgmONhC", "1eanDX8KHOHm1y_snBWqKtYLrrrfYAeKL", "1g0EoOB8ZGzoy0Cc_nm7kCA", "SURFACE<br />Temporada 1 Capitulos 1-8<br />Latino Ingles [Español]<br />MKV.2022P1G"]);y+=8;
+			
+			w(["", "", "1enw6zBPDU6JIHWLHX6jWP0vclQgmONhC", "1eaRzeHHvvubhKCd22xZzI58W5aWRwJpP", "1uEUDM2Q9gnTLwWZvJ4igfA", "SURFACE<br />Temporada 2 Capitulos 9-16<br />Ingles [Español]<br />MKV.2025P1G"]);y+=7;
+			
+			z(["swampthing", "lacosadelpantano", "", "https://image.tmdb.org/t/p/original/aI4kc1w6issn82IHUq2do9Q53N5.jpg", "https://teraboxapp.com/s/1OSFmM5SOzq8vJj3-Mznl8Q", "SWAMP THING<br />3971983<br />Lat[]MP4"]);
 			x+=1;
 			
 			ads([""]);
@@ -2605,6 +2691,8 @@
 			z(["", "", "", "https://gatonplayseries.com/wp-content/uploads/2020/07/k7PuHoj2oE7nEHExwliF2FSXFnr.jpg", "https://teraboxapp.com/s/1Pp6bMFNyesDLwrQxtdMsKw", "TERMINATOR<br />DARK FATE<br />230USA2019<br />Lat[]MP4"]);
 			x+=1;
 			
+			w(["test", "aprueba", "1ayX4R_Ff_luDaiqJFHE-5KnX4osXlfxk", "1WBgk9kMxRVYVDt34AhP-iJtGIyNN_PvZ", "1oLBbDf0pT9X_jvLeHPRBTg", "TEST<br />Latino Ingles [Español Ingles]<br />1080p.MKV.2422025P1"]);x+=1;
+			  
 			z(["thatsmyboy", "eseesmihijo", "", "https://pics.filmaffinity.com/that_s_my_boy-140974412-mmed.jpg", "https://terabox.com/s/1IhxZH53m_E-CX_tNiUzNog", "THAT'S MY BOY<br />58411USA2012P1<br />Lat[]MP4"]);
 			x+=1;
 			
@@ -2917,11 +3005,15 @@
 			z(["", "", "", "https://gatonplayseries.com/wp-content/uploads/2020/09/qPaKCxME6geS3hqVjLe3VjCNMEJ.jpg", "https://teraboxapp.com/s/1YzcPtPdCIii5f3V6teYotg", "THE KARATE KID<br />242USA2010P1<br />Lat[]MP4"]);
 			x+=1;
 			
+			w(["thelastkumite", "suultimapelea", "1ZV1OYd17I7KUb9utCIxzoByeuZCDHRVU", "1ZkFWoPTwc1zCoHPG5Cpn3jExSrEsawuo", "1pmIgboqtkeValBIoBiQfIg", "THE LAST KUMITE<br />Latino Ingles [Español]<br />1080p.MKV.3222024P1"]);x+=1;
+			
 			z(["thelastlaugh", "laultimacarcajada", "", "https://pics.filmaffinity.com/the_last_laugh-987053053-mmed.jpg", "https://teraboxapp.com/s/1q8DFqOKVov2B7oI0qlQoSg", "THE LAST LAUGH<br />1362019<br />Lat[]MP4"]);
 			x+=1;
 			
 			z(["thelastsummer", "nuestroultimoverano", "", "https://pics.filmaffinity.com/the_last_summer-939716228-mmed.jpg", "https://teraboxapp.com/s/1s7_aU6xeioE3WaGcUBJNbA", "THE LAST SUMMER<br />1092018<br />Lat[]MP4"]);
 			x+=1;
+			
+			w(["thelionking", "elreyleon", "1gJXM6BCwC6GMBU3mre0pNF981Ly6CYT0", "1gJGdvh9Kc9_-p25cw8r1-L73qX4fFVAZ", "18sX2f_ZXDNPr4r5Unh88xA", "THE LION KING<br />Latino Ingles [Español]<br />MKV.3961994P1G"]);x+=1;
 			
 			z(["thelist", "lalista", "", "https://pics.filmaffinity.com/the_list-798323532-mmed.jpg", "https://teraboxapp.com/s/1ZU-Ppi82arrnNToA0Uontw", "THE LIST<br />1622023<br />Lat[]MP4"]);
 			x+=1;
@@ -3067,8 +3159,16 @@
 			z(["theswordsman", "elespadachin", "", "https://pics.filmaffinity.com/geom_gaek-413827660-mmed.jpg", "https://teraboxapp.com/s/1ZtkMAzWLBZSi1OMQ-gYK0w", "검객<br />THE SWORDSMAN<br />306KOR2020<br />Lat[]MP4"]);
 			x+=1;
 			
+			z(["thewarriors", "guerreros", "", "https://pics.filmaffinity.com/the_warriors-318229443-mmed.jpg", "https://teraboxapp.com/s/1iguPSiOXNNWSvbZzJ2wKeQ", "THE WARRIORS<br />299101979<br />Lat[]MP4"]);
+			x+=1;
+			
+			z(["thewatchers", "observados", "", "https://pics.filmaffinity.com/the_watchers-599911256-mmed.jpg", "https://terabox.com/s/1wLlKzsApx2QAneXWrSpRZA", "THE WATCHERS<br />88375USA2024<br />Lat[]MP4"]);
+			x+=1;
+			
 			z(["thewaterboy", "elaguador", "", "https://pics.filmaffinity.com/The_Waterboy_El_aguador-827375070-large.jpg", "https://terabox.com/s/1TMoB2_pKBkMwqJjvVPw65g", "THE WATERBOY<br />78684USA1999P2<br />Lat[]AVI"]);
 			x+=1;
+			
+			w(["thewizardofoz", "elmagodeoz", "", "1XSOpDfHwDdG_Tqg0cAGRuduP6Kwz1sRY", "1piVjWQjOQ8oRnAl_2Nfikw", "THE WONDERFUL WIZARD OF OZ<br />Latino Ingles [Español] <br />1080p.MKV2592025P1"]);x+=1;
 			
 			z(["thewonderyears", "losañosmaravillosos", "https://drive.google.com/thumbnail?id=1QXzEQDjJf5KRPsT9LT0NxDvL62yRLmYv", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05pM2tPf5whFSTlriv2c91uWgm55yDMgHXycdB5t2G6hF8yMJwo7GtfI&s=10", "https://1024terabox.com/s/12-jSr5l7BN7xxSqfQIwd-g", "THE WONDER YEARS<br />T1C1-6<br />USA1988S1<br />Lat[]MP4"]);
 			y+=6;
@@ -3090,6 +3190,8 @@
 			
 			z(["thirteen", "alostrece", "", "https://pics.filmaffinity.com/thirteen-175215912-mmed.jpg", "https://terabox.com/s/1lDeYEzHwXTmYNZqyaRjNzA", "THIRTEEN<br />393192003P2<br />Lat[]MP4"]);
 			x+=1;
+			
+			w(["thismeanswar", "estoesguerra", "1_szDIoN_y7eX0HMJmhE8o2VZniaqVlIm", "1_t_e2B_TFiVc-lPfKembKo-NJmc_wb4y", "1XwxHdhlb6-1XtxERK_uR5w", "THIS MEANS WAR<br />Latino Ingles [Español]<br />MKV.5562012P1G"]);x+=1;
 			
 			z(["thor", "", "", "https://pics.filmaffinity.com/thor-223512549-mmed.jpg", "https://teraboxapp.com/s/1S4FOMi9k_1F6qzFH-3z_rQ", "THOR<br />112USA2011<br />Lat[]MP4"]);
 			x+=1;
@@ -3133,14 +3235,15 @@
 			z(["toystory", "", "", "https://pics.filmaffinity.com/toy_story-626273371-mmed.jpg", "https://teraboxapp.com/s/1xFr7KDt6mTviDDQTcDsieQ", "TOY STORY<br />1151995<br />Lat[]MP4"]);
 			x+=1;
 			
-			z(["", "", "", "https://pics.filmaffinity.com/toy_story_2-506817944-mmed.jpg", "https://teraboxapp.com/s/1vB_Es4aasBU94QR6cz_sWQ", "TOY STORY 2<br />923041999<br />Lat[]MP4"]);
-			x+=1;
+			w(["", "", "", "1drk9x6N8Jwg-q_Yxy8vq79RgUCnCUWdC", "1vIoD4OeiG9lJWhQkBmuRXQ", "TOY STORY 2<br />Latino Ingles [Español]<br />MKV.4861999P1G"]);x+=1;
 			
 			z(["", "", "", "https://pics.filmaffinity.com/toy_story_3-691147043-mmed.jpg", "https://teraboxapp.com/s/1jYXNzNJkl_R9nmJcopINcQ", "TOY STORY 3<br />1002010<br />Lat[]MP4"]);
 			x+=1;
 			
 			z(["", "", "", "https://pics.filmaffinity.com/disney_pixar_s_toy_story_of_terror-524873834-mmed.jpg", "https://teraboxapp.com/s/1EwtnyBxT2B7pgA5tT3XVyQ", "TOY STORY OF TERROR<br />9902USA2013P1<br />Lat[]MP4"]);
 			x+=1;
+			
+			w(["", "", "1dZd2q7ZXiwjYufu3-IAGo265E27vDDwt", "1dJohAv8e51gKi2VhWgAOGNdcjuAvltfY", "1oKIVsyvTMJfKLomUmyxa0Q", "LIGHTYEAR<br />Latino Ingles [Español]<br />MKV.5512022P1G"]);x+=1;
 			
 			z(["transformers", "", "", "https://pics.filmaffinity.com/transformers_the_last_knight-188708679-mmed.jpg", "https://teraboxapp.com/s/1HQ3fT3ECpoBHVYDiJKVx1A", "<div>TRANSFORMERS<br />THE LAST KNIGHT<br />476USA2017<br />Lat[]MP4"]);
 			x+=1;
@@ -3171,6 +3274,10 @@
 			
 			z(["triplefrontier", "triplefrontera", "", "https://pics.filmaffinity.com/triple_frontier-274127047-mmed.jpg", "https://teraboxapp.com/s/1iKdtYGk_eloNo-ChZARCYg", "TRIPLE FRONTIER<br />110USA2019<br />Lat[]MP4"]);
 			x+=1;
+			
+			w(["truestory", "falsaidentidad", "1d2jgMA8gV1ntCSRCPyPyJoCH64TElNTn", "1d5abNzfeoaNEQqecMQssOXTT6GPeN8bm", "1kuPeMYEUAu_6GK5yn5e3uQ", "TRUE STORY<br />Latino Ingles [Español]<br />MKV.5212015P1G"]);x+=1;
+			
+			w(["turnonocturno", "", "1_9eym_u7VV_V99A713FDrTDbwL4_JNi0", "1_CmdGuc0Lq79NrSaIpqkB40O8eZvfg_1", "1yHwHZTtMte5E3Vc-aQQwiA", "TURNO NOCTURNO<br />Latino<br />720p.MP4.1122024P1"]);x+=1;
 			
 			z(["twilightzone", "ladimensiondesconocida", "", "https://gatonplayseries.com/wp-content/uploads/2020/11/s66HVGW0sxQWvh7APdzgEKF4XYP.jpg", "https://teraboxapp.com/s/19tMCYzS-vDGQtA6xP6k0eQ", "TWILIGHT ZONE<br />THE MOVIE<br />2271983<br />Lat[]MP4"]);
 			x+=1;
@@ -3212,6 +3319,10 @@
 			z(["ungenioduecompariunpollo", "elgenio", "", "https://pics.filmaffinity.com/un_genio_due_compari_un_pollo-602934665-mmed.jpg", "https://terabox.com/s/13Q2kFc5QIDU4zbgDjKBn4w", "UN GENIO, DUE COMPARI, UN POLLO<br />40178ITA1975<br />Lat[]MP4"]);
 			x+=1;
 			
+			w(["unviajealcorazon", "", "1b9aFTQifXNN7log6rgjRRskWCvcM5HTc", "1b5QIVYXkNsZLYP0jLztGzgjoydBstoPX", "19zfapoNP9s6uf5Tk2oy8DA?op_source=goldsharelink", "UN VIAJE AL CORAZÓN<br />THE WIND WALKER<br />Latino Ingles [Español]<br />MKV.2024P1G"]);x+=1;
+			
+			w(["unapequeñaconfusion", "", "1_ShuNmBVCCOtL_VBnUYF1GZJPaMClL1X", "1_TNxiNesiUzLdp28z_DDN4Y_o3ACx-_5", "1aj1jpATrronoW5EJsigUjQ", "UNA PEQUEÑA CONFUSIÓN<br />Latino [Español Ingles]<br />1080p.MKV.3082024P1"]);x+=1;
+			
 			z(["unforgiven", "losimperdonables", "", "https://pics.filmaffinity.com/unforgiven-854755790-mmed.jpg", "https://terabox.com/s/1IOhGFMjw2CTVNwjKNK52IA", "UNFORGIVEN<br />5711992P2<br />Lat[]MP4"]);
 			x+=1;
 			
@@ -3231,17 +3342,13 @@
 			z(["venom", "", "", "https://pics.filmaffinity.com/venom-367385587-mmed.jpg", "https://teraboxapp.com/s/1iKDqVj-EE3x5CCmwUzTe2Q", "VENOM<br />978042018<br />Lat[]MP4"]);
 			x+=1;
 			
+			w(["vietnam", "vietnam", "1aoDQgt1SeLb-py7-Jm1coYHz3rynWJfH", "1aj2k9tWozDliNtevM8nWV7CNHTld2vRb", "1hsYnuWGE25-y250xfWO10A", "VIETNAM THE WAR<br />THAT CHANGED AMERICA<br />Capitulos 1-6<br />Ingles [Español]<br />MKV.2025P1G"]);y+=6;
+			
 			ads([""]);
 			z(["w", "", "", "", "", "<h1>&Wopf;</h1>"]);
 			ads([""]);
 			
 			z(["walle", "", "", "https://pics.filmaffinity.com/walloe-973488527-mmed.jpg", "https://terabox.com/s/1TL1KiAOLBOb-VhTTFmn1pQ", "WALL-E<br />142USA2008<br />Lat[]MP4"]);
-			x+=1;
-			
-			z(["thewarriors", "guerreros", "", "https://pics.filmaffinity.com/the_warriors-318229443-mmed.jpg", "https://teraboxapp.com/s/1iguPSiOXNNWSvbZzJ2wKeQ", "THE WARRIORS<br />299101979<br />Lat[]MP4"]);
-			x+=1;
-			
-			z(["thewatchers", "observados", "", "https://pics.filmaffinity.com/the_watchers-599911256-mmed.jpg", "https://terabox.com/s/1wLlKzsApx2QAneXWrSpRZA", "THE WATCHERS<br />88375USA2024<br />Lat[]MP4"]);
 			x+=1;
 			
 			z(["watchmen", "losvigilantes", "", "https://pics.filmaffinity.com/watchmen-337424304-mmed.jpg", "https://teraboxapp.com/s/152X_atYnKfBvpsMdJCj8yw", "WATCHMEN<br />1382009<br />Lat[]MP4"]);
@@ -3250,8 +3357,16 @@
 			z(["welcometomarwen", "", "", "https://pics.filmaffinity.com/welcome_to_marwen-421476764-mmed.jpg", "https://teraboxapp.com/s/13I7L_285c8zuTqR6o9PEyA", "WELCOME TO MARWEN<br />1002018<br />Lat[]MP4"]);
 			x+=1;
 			
+			w(["whatif", "", "1beUPLFOFhqaoLA65wt4FH2xHJKSYSQxS", "1bdXK1w4tu2fUrUJjJC3JNDz3YxfQHkU1", "1DRMVsyIGrGdc3AAXIyotTQ", "WHAT IF<br />Temporada 1 Capitulos 1-9<br />Ingles [Español]<br />MKV.2021P1G"]);y+=9;
+			
+			w(["", "", "1beUPLFOFhqaoLA65wt4FH2xHJKSYSQxS", "1bWDDL0cVTRcH6v96NLhzy-_lU51I749J", "1USwwKqGz5JqgrpxxELiaSQ", "WHAT IF<br />Temporada 2 Capitulos 10-18<br />Ingles [Español]<br />MKV.2023P1G"]);y+=9;
+			
+			w(["", "", "1beUPLFOFhqaoLA65wt4FH2xHJKSYSQxS", "1bk85qBk1m85neNnqqVD5hkSEKO9eYE2Y", "1NAL2JygF9xg-znWtlj_XRw", "WHAT IF<br />Temporada 3 Capitulos 19-26<br />Ingles [Español]<br />MKV.2024P1G"]);y+=8;
+			
 			z(["whoami", "quiensoy", "", "https://pics.filmaffinity.com/wo_shi_shei_ngo_si_sui_who_am_i-714158392-mmed.jpg", "https://teraboxapp.com/s/1RtAdSQyBKMv1uGZAmOBfNA", "WHO AM I ?<br />542061998P2<br />Lat[]MP4"]);
 			x+=1;
+			
+			w(["whyhim", "porqueel", "1a5IPkQvGa8bDK5jsdimac9TOWpXutEjz", "1aBWsAcCOJi54ttCnhBV85XaDaa_TI8bJ", "1QXRbfhVSVAWVpOf028sMiA", "WHY HIM<br />Latino Ingles [Español]<br />MKV.5322016P1G"]);x+=1;
 			
 			z(["widows", "", "", "https://pics.filmaffinity.com/widows-394197623-mmed.jpg", "https://teraboxapp.com/s/1KYX4T1RV31ejbIajhmzLlw", "WIDOWS<br />768852018<br />Lat[]MP4"]);
 			x+=1;
